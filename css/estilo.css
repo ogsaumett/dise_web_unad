@@ -1,0 +1,181 @@
+#bg {
+	width: 100%;
+	height: 100%;
+	position: fixed; /*Posición Fija*/
+	top: 0;
+	left: 0;
+	z-index: -99999;
+}
+/**/
+header {
+	width: 100%;
+	height: 131px;
+	position: fixed; /*Posición Fija*/
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	/*z-index: 0; Defecto*/
+	background: rgba(240,180,41,1.0);
+	/*background: rgba(255,175,0,0.9);*/
+	box-shadow: 0 5px 10px rgba(0,0,0,0.55);
+}
+header nav {
+	width: 1224px;
+	height: 111px;
+	margin: 10px auto;
+}
+header nav a {
+	width: 149px;
+	height: 111px;
+	float: left;
+	margin: 0 2px;
+	background-image: url('../img/sprite-html5.png');
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	-webkit-transition:all 0.5s ease-in;
+	transition:all 0.5s ease-in;
+}
+header nav a:hover {
+	-webkit-transition:all 0.3s ease-out;
+	transition:all 0.3s ease-out;
+}
+
+header nav #link_1 { background-position: 0 0; }
+header nav #link_2 { background-position: -149px 0; }
+header nav #link_3 { background-position: -298px 0; }
+header nav #link_4 { background-position: -447px 0; }
+header nav #link_5 { background-position: -596px 0; }
+header nav #link_6 { background-position: -745px 0; }
+header nav #link_7 { background-position: -894px 0; }
+header nav #link_8 { background-position: -1043px 0; }
+
+header nav #link_1:hover { background-position: 0 -111px; }
+header nav #link_2:hover { background-position: -149px -111px; }
+header nav #link_3:hover { background-position: -298px -111px; }
+header nav #link_4:hover { background-position: -447px -111px; }
+header nav #link_5:hover { background-position: -596px -111px; }
+header nav #link_6:hover { background-position: -745px -111px; }
+header nav #link_7:hover { background-position: -894px -111px; }
+header nav #link_8:hover { background-position: -1043px -111px; }
+
+/**/
+section {
+	width: 1024px;
+	height: auto;
+	margin: 100 auto;
+}
+section article {
+	width: 960px;
+	height: 650px;
+	margin: 0 auto 100px auto;
+	position: relative; /*Posición Relativa*/
+	/*background: rgba(255,255,255,0.9);
+	border-radius: 25px;*/
+}
+section article .espacioTop {
+	width: 100%;
+	height: 300px;
+	display: block;
+	float: left;
+	background: transparent;
+}
+section article hgroup {
+	width: 100%;
+	height: 100px;
+	position: absolute; /*Posición Absoluta*/
+	top: 150px;
+	left: 15px;
+	z-index: 0;
+}
+section article hgroup h1 {
+	font-family: 'Dosis', sans-serif;
+	text-align: left;
+	font-size: 3em;
+	font-weight: 500;
+	color: #09F;
+	margin: 0;
+	text-shadow:2px 2px 5px rgba(0,0,0,0.75);
+}
+section article hgroup h5 {
+	font-family: 'Dosis', sans-serif;
+	text-align: left;
+	font-size: 1.5em;
+	line-height: 0.3em;
+	font-weight: 500;
+	color: #000;
+	margin: 0;
+	text-shadow:2px 2px 5px rgba(0,0,0,0.75);
+}
+section article div {
+	width: 930px;
+	height: 400px;
+	position: absolute; /*Posición Absoluta*/
+	top: 250px;
+	left: 15px;
+	z-index: 0;
+}
+section article div figure {
+	width: 495px;
+	height: 370px;
+	position: relative;
+}
+section article div figure img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.75);
+	/**/
+	-webkit-filter: invert(1);
+}
+section article div figure figcaption {
+	width: 100%;
+	height: 27px;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	color: #FFF;
+	background: rgba(0,0,0,0.75);
+	padding: 8px 0 0 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+section article div p {
+	width: 420px;
+	height: 370px;
+	position: relative;
+	margin: 0 0 0 15px;
+	font-family: 'Dosis', sans-serif;
+	text-align: justify;
+	font-size: 1.5em;
+	color: #000;
+}
+section article div figure, section article div p {
+	float: left;
+}
+/**/
+aside {
+	width: 300px;
+	height: 250px;
+	position: fixed; /*Posición Fija*/
+	top: 30%;
+	right: 0;
+	z-index: 99997;
+	background: rgba(240,180,41,1);
+	box-shadow: 0 0 10px rgba(0,0,0,0.55);
+	border-radius: 15px 0 0 15px;
+}
+/**/
+footer {
+	width: 100%;
+	height: 35px;
+	position: fixed; /*Posición Fija*/
+	bottom: 0;
+	left: 0;
+	z-index: 99998;
+	background: rgba(240,180,41,1);
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.55);
+}
